@@ -1,0 +1,18 @@
+{
+    "files.exclude": {
+        "**/*.exe": true
+    },
+    "editor.tabCompletion": "onlySnippets",
+    "code-runner.customCommand": "cd $dir && g++ \"$fileName\" -Wall -o \"$fileNameWithoutExt\" && $dir$fileNameWithoutExt && del $dir$fileNameWithoutExt.exe",
+    "code-runner.executorMap": {
+        "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
+        "c": "cd $dir && gcc $fileName -Wall -o $fileNameWithoutExt && $dir$fileNameWithoutExt && del $dir$fileNameWithoutExt.exe",
+        "cpp": "cd $dir && g++ \"$fileName\" -Wall -o \"$fileNameWithoutExt\" && $dir$fileNameWithoutExt && del $dir$fileNameWithoutExt.exe",
+        "python": "python -u",
+        "powershell": "powershell -ExecutionPolicy ByPass -File",
+        "bat": "cmd /c",
+        "shellscript": "bash",
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.ignoreSelection": true,
+}

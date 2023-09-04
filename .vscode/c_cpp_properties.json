@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "DEBUG"
+            ],
+            "compilerPath": "C:/MinGW/bin/g++.exe", // Enter your compiler path here
+            "intelliSenseMode": "gcc-x64", // You may change it to 'windows-gcc-x64' in case you still face problems related to intellisense
+            "cStandard": "c17",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
