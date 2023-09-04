@@ -124,6 +124,6 @@ int main(){
 // pattern3(5);
 // pattern4(5);
 // pattern5(5);
-// pattern6(5);
+// pattern6(5) ;
 return 0;
 }
