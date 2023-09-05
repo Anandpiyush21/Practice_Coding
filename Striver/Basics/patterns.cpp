@@ -119,6 +119,10 @@ void pattern6(int n){
 
 }
 
+void pattern7(int n){
+
+    
+}
 int main(){
 
 // pattern1(4);
