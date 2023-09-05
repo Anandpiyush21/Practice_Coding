@@ -145,7 +145,6 @@ void pattern7(int n){
         }
         cout<<endl;
     }
-    cout<<"\n";
 }
 
 void pattern8(int n){
@@ -176,6 +175,47 @@ void pattern8(int n){
     
 }
 
+void pattern9(int n){
+
+    /*
+    
+   *   
+  ***
+ *****
+*******
+*******
+ *****
+  ***
+   *
+
+    */
+
+    pattern7(n);
+    pattern8(n);
+}
+
+void pattern10(int n){
+
+    /*
+*
+**
+***
+****
+***
+**
+*
+    */
+
+    for(int i=1;i<=2*n-1;i++){
+        int stars=i;
+        if(i>n) stars=2*n-i;
+        for(int j=1;j<=stars;j++){
+            cout<<"*";
+        }
+        cout<<"\n";
+    }
+}
+
 int main(){
 
 // pattern1(4);
@@ -183,8 +223,11 @@ int main(){
 // pattern3(5);
 // pattern4(5);
 // pattern5(5);
-// pattern6(5) ;
+// pattern6(5);
 // pattern7(4);
 // pattern8(4);
+// pattern9(4);
+// pattern10(4);
+
 return 0;
 }
