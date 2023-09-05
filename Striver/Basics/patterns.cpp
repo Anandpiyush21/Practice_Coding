@@ -148,6 +148,33 @@ void pattern7(int n){
     cout<<"\n";
 }
 
+void pattern8(int n){
+    /*
+    
+    *******
+     *****
+      ***
+       *
+    
+    */
+    for(int i=0;i<n;i++){
+
+        // Space
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        // Star
+        for(int j=0;j<(2*n)-(2*i+1);j++){
+            cout<<"*";
+        }
+        // Space
+        for(int j=0;j<i;j++){
+            cout<<" ";
+        }
+        cout<<"\n";
+    }
+    
+}
 
 int main(){
 
@@ -158,5 +185,6 @@ int main(){
 // pattern5(5);
 // pattern6(5) ;
 // pattern7(4);
+// pattern8(4);
 return 0;
 }
