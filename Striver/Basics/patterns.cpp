@@ -123,6 +123,8 @@ void pattern7(int n){
 
     
 }
+
+
 int main(){
 
 // pattern1(4);
