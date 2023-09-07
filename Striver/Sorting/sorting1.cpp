@@ -40,13 +40,16 @@ void insertion_sort(int arr[],int n){
         int j=i;
         while(j>0 && arr[j-1]>arr[j]){
             swap(arr[j-1],arr[j]);
-        }j--;
+            j--;
+        }
     }
 
 }
 
+
+
 int main(){
-int arr[]={7,5,6,8,52,15,22,444,88};
+int arr[]={2, 4, 1, 3, 6, 13, 28 };
 int n= sizeof(arr)/sizeof(arr[0]);
 // bubble_sort(arr,n);
 // selection_sort(arr,n);
