@@ -13,12 +13,14 @@ int sum_arm(int n){
 }
 
 bool isArm(int n){
-    return (n=sum_arm(n));
+    return (n==sum_arm(n));
 }
 
 int main(){
 
-cout<<isArm(1634);
+cout<<isArm(1634)<<endl;
+cout<<isArm(634)<<endl;
+
 
 return 0;
 }
