@@ -216,6 +216,87 @@ void pattern10(int n){
     }
 }
 
+void pattern11(int n){
+/*
+
+1 
+0 1
+1 0 1
+0 1 0 1
+
+*/
+
+
+
+    for(int i=0;i<n;i++){
+        int start=1;
+        if(i%2==0) start=1;
+        else start=0;
+        for(int j=0;j<=i;j++){
+            cout<<start<<" ";
+            start=1-start;
+        }
+        cout<<endl;
+    }
+}
+
+void pattern12(int n){
+/*
+
+1      1
+12    21
+123  321
+12344321
+
+*/
+
+
+
+      int space=2*(n-1);
+      for(int i=1;i<=n;i++){
+        // Numbers
+        for(int j=1;j<=i;j++){
+            cout<<j;
+        }
+        // Space
+        for(int j=1;j<=space;j++){
+            cout<<" ";
+        }
+
+        // Numbers
+        for(int j=i;j>=1;j--){
+            cout<<j;
+        }
+        space-=2;
+        cout<<"\n";
+      }
+}
+
+void pattern13(int n){
+
+/*
+
+1 
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+
+*/
+
+    int pri=1;
+    for(int i =0;i<n;i++){
+        for(int j=0;j<=i;j++){
+            cout<<pri<<" ";
+            pri++;
+        }
+        cout<<endl;
+    }
+
+
+}
+
+
 int main(){
 
 // pattern1(4);
@@ -228,6 +309,9 @@ int main(){
 // pattern8(4);
 // pattern9(4);
 // pattern10(4);
+// pattern11(4);
+// pattern12(4);
+pattern13(5);
 
 return 0;
 }
