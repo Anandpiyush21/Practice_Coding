@@ -4,7 +4,7 @@ using namespace std;
 
 void print_Name(int i,int n){
     if(i>n) return;
-    cout<<"Om"<<endl;i++; // Will Print Om n times
+    cout<<"Om"<<endl;i++;
     print_Name(i,n);
 }
 
