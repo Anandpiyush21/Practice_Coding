@@ -55,10 +55,7 @@ int main() {
     scanf("%d", &n);
 // In the place of for loop, you can also take while loop
     for (int i = 1; i <= n; i++) {
-        int db5 = (i % 5 == 0);
-        int db7 = (i % 7 == 0);
-
-        switch (db5 * 2 + db7) {
+        switch ((i % 5 == 0) * 2 + (i % 7 == 0)) {
             case 0:
                 printf("%d\n", i);
                 break;
@@ -76,3 +73,4 @@ int main() {
 
     return 0;
 }
+
