@@ -1,47 +1,51 @@
 // Method 1 using While loop
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main() {
-//     int n;
-//     scanf("%d", &n);
+int main() {
+    int n;
+    scanf("%d", &n);
 
-//     int i = 1;
-//     while (i <= n) {
-//         if (i % 5 == 0 && i % 7 == 0) {
-//             printf("cheemdoge \n");
-//         } else if (i % 5 == 0) {
-//             printf("cheem \n");
-//         } else if (i % 7 == 0) {
-//             printf("doge \n");
-//         } else {
-//             printf("%d \n", i);
-//         }
-//         i++;
-//     }
+    int i = 1;
+    while (i <= n) {
+        if (i % 5 == 0 && i % 7 == 0) {
+            printf("cheemdoge \n");
+        } else if (i % 5 == 0) {
+            printf("cheem \n");
+        } else if (i % 7 == 0) {
+            printf("doge \n");
+        } else {
+            printf("%d \n", i);
+        }
+        i++;
+    }
 
-//     return 0;
-// }
+    return 0;
+}
+
+
 // Method 2 using For loop
-// #include <stdio.h>
+#include <stdio.h>
 
-// int main() {
-//     int n;
-//     scanf("%d", &n);
+int main() {
+    int n;
+    scanf("%d", &n);
 
-//     for (int i = 1; i <= n; i++) {
-//         if (i % 5 == 0 && i % 7 == 0) {
-//             printf("cheemdoge \n");
-//         } else if (i % 5 == 0) {
-//             printf("cheem \n");
-//         } else if (i % 7 == 0) {
-//             printf("doge \n");
-//         } else {
-//             printf("%d \n", i);
-//         }
-//     }
+    for (int i = 1; i <= n; i++) {
+        if (i % 5 == 0 && i % 7 == 0) {
+            printf("cheemdoge \n");
+        } else if (i % 5 == 0) {
+            printf("cheem \n");
+        } else if (i % 7 == 0) {
+            printf("doge \n");
+        } else {
+            printf("%d \n", i);
+        }
+    }
 
-//     return 0;
-// }
+    return 0;
+}
+
+
 
 // Using switch
 #include <stdio.h>
