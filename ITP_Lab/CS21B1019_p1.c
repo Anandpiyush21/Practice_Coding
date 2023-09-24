@@ -8,7 +8,7 @@ int main() {
     int i = 1;
     while (i <= n) {
         if (i % 5 == 0 && i % 7 == 0) {
-            printf("cheemdoge \n");
+            printf("cheem doge \n");
         } else if (i % 5 == 0) {
             printf("cheem \n");
         } else if (i % 7 == 0) {
@@ -32,7 +32,7 @@ int main() {
 
     for (int i = 1; i <= n; i++) {
         if (i % 5 == 0 && i % 7 == 0) {
-            printf("cheemdoge \n");
+            printf("cheem doge \n");
         } else if (i % 5 == 0) {
             printf("cheem \n");
         } else if (i % 7 == 0) {
@@ -69,7 +69,7 @@ int main() {
                 printf("cheem\n");
                 break;
             case 3:
-                printf("cheemdoge\n");
+                printf("cheem doge\n");
                 break;
         }
     }
