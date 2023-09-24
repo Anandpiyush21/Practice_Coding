@@ -49,7 +49,7 @@
 int main() {
     int n;
     scanf("%d", &n);
-
+// In the place of for loop, you can also take while loop
     for (int i = 1; i <= n; i++) {
         int db5 = (i % 5 == 0);
         int db7 = (i % 7 == 0);
