@@ -1,17 +1,26 @@
 #include <stdio.h>
 
-int main() {
-    int N;
-    scanf("%d", &N);
-    int leaps = 0;
-    int distance_covered = 0;
-    int leap_length = 1; 
+void pattern7(int n){
 
-    while (distance_covered < N) {
-        distance_covered += leap_length;
-        leap_length += 9;
-        leaps++;
+    for(int i=0;i<n;i++){
+        // Space
+        for(int j=0;j<n-i-1;j++){
+        printf(" ");
+        }
+        // Star
+        for(int j=0;j<2*i+1;j++){
+            
+        
+        }
+        
+
+        // Space
+        for(int j=0;j<n-i-1;j++){
+        printf(" ");
+        }
+    printf("\n");
     }
-    printf("%d", leaps);
-    return 0;
+}
+int main(){
+    pattern7(4);
 }
