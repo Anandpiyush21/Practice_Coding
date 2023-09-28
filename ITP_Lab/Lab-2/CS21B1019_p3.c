@@ -1,17 +1,19 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int N;
     scanf("%d", &N);
-    int leaps = 0;
+    int jumps = 0;
     int distance_covered = 0;
-    int leap_length = 1; 
+    int Jump_length = 1;
 
-    while (distance_covered < N) {
-        distance_covered += leap_length;
-        leap_length += 9;
-        leaps++;
+    while (distance_covered < N)
+    {
+        distance_covered += Jump_length;
+        Jump_length += 9;
+        jumps++;
     }
-    printf("%d", leaps*15);
+    printf("%d", jumps * 15);
     return 0;
 }

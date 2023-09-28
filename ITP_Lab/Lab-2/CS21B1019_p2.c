@@ -1,26 +1,23 @@
 #include <stdio.h>
 
-void pattern7(int n){
-
-    for(int i=0;i<n;i++){
-        // Space
-        for(int j=0;j<n-i-1;j++){
-        printf(" ");
+int main()
+{
+    int n;
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i++)
+    {
+        for (int k = 0; k <= n - i + 1; k++)
+        {
+            printf(" ");
         }
-        // Star
-        for(int j=0;j<2*i+1;j++){
-            
-        
+        for (int j = i; j <= 2 * i - 1; j++)
+        {
+            printf("%d", j);
         }
-        
-
-        // Space
-        for(int j=0;j<n-i-1;j++){
-        printf(" ");
+        for (int y = 2 * i - 2; y >= i; y--)
+        {
+            printf("%d", y);
         }
-    printf("\n");
+        printf("\n");
     }
-}
-int main(){
-    pattern7(4);
 }
