@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+//Q3 updated
 int main()
 {
     int N;
