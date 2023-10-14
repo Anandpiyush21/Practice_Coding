@@ -2,11 +2,11 @@
 
 void fibo(int n, int a, int b)
 {
-    if (n > 0) {
+    if (n<=0) return;
+    else {
     fibo(n - 1, b, a + b);
     printf("%d ",a);
     }
-    else return;
 }
 
 int main(){
