@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 int findMax(vector<int> &v) {
-    int maxi = INT_MIN;
+    int maxi = -10000; //INT_MIN
     int n = v.size();
     //find the maximum:
     for (int i = 0; i < n; i++) {
@@ -38,8 +38,9 @@ int minimumRateToEatapples(vector<int> v, int h) {
 
 int main()
 {
-    vector<int> v = {7, 15, 6, 3};
-    int h = 8;
+    vector<int> v = {30,11,23,4,20};
+    sort(v.begin(),v.end());
+    int h = 6;
     int ans = minimumRateToEatapples(v, h);
     cout << ans ;
     return 0;
