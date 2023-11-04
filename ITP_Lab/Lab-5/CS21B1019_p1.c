@@ -1,31 +1,27 @@
 #include <stdio.h>
 
-int searchInsert(int* nums, int numsSize, int target) {
-    int left = 0, right = numsSize - 1;
-
-    while (left <= right) {
-        int mid = left + (right - left) / 2;
-
-        if (nums[mid] == target) {
-            return mid;
-        } else if (nums[mid] < target) {
-            left = mid + 1;
-        } else {
-            right = mid - 1;
-        }
+int searchInsert(int* nums, int numsSize, int target){
+    int i = 0;
+    
+    while ((i < numsSize) && (target > nums[i])) {
+        i ++;
     }
-
-    return left; 
+    
+    return i;
 }
 
 int main() {
     int n;
+    int k;
     scanf("%d",&n);
     int arr[n];
-
-
-    int target = 5;
-    int result = searchInsert(nums, numsSize, target);
-    printf("%d\n", result); // Output: 2
+    for(int i=0;i<n;i++){
+        scanf("%d",&k);
+        arr[i]=k;
+    }
+    int tar;
+    scanf("%d",&tar);
+    int result = searchInsert(arr, n, tar);
+    printf("%d\n", result);
     return 0;
 }
