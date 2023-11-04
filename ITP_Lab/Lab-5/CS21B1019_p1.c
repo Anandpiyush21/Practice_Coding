@@ -7,7 +7,7 @@ int searchInsert(int* nums, int numsSize, int target) {
         int mid = left + (right - left) / 2;
 
         if (nums[mid] == target) {
-            return mid; // Found the target, return the index
+            return mid;
         } else if (nums[mid] < target) {
             left = mid + 1;
         } else {
@@ -25,7 +25,6 @@ int main() {
 
 
     int target = 5;
-    int numsSize = sizeof() / sizeof(nums[0]);
     int result = searchInsert(nums, numsSize, target);
     printf("%d\n", result); // Output: 2
     return 0;
