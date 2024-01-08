@@ -1,4 +1,4 @@
-//8th Jan
+//7th Jan
 class Solution {
 public:
     int numberOfArithmeticSlices(std::vector<int>& nums) {
