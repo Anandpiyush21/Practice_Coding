@@ -1,0 +1,22 @@
+//9th Jan
+class Solution {
+public:
+    void inOrder(TreeNode* root1 , string &s){
+        if(!root1) return;
+        // string res = "";
+        if(root1->left == NULL && root1->right ==NULL){
+            s+=to_string(root1->val)+"X";
+            return;
+        }
+        inOrder(root1->left,s);
+        inOrder(root1->right,s);
+    }
+    bool leafSimilar(TreeNode* root1, TreeNode* root2) {
+        string s1;
+        string s2;
+        inOrder(root1,s1);
+        inOrder(root2,s2);
+        return s1==s2;
+        
+    }
+};
